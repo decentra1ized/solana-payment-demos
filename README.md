@@ -7,8 +7,6 @@ Interactive demo website showcasing Solana-based payment solutions. Built to dem
 ### Performance Metrics
 - Global stablecoin market statistics (Visa Onchain Analytics)
 - Stablecoin transaction count by blockchain (stacked bar chart)
-- Transaction cost comparison across chains
-- Solana TPS visualization
 
 ### Interactive Payment Demos
 - **Basic SOL Payment**: Direct P2P SOL transfer with ~400ms confirmation
