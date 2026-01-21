@@ -1,0 +1,98 @@
+# Solana Payment Showcase
+
+> Interactive demo website showcasing Solana-based payment solutions for enterprise partners. Built by Chaerin Kim @ Solana Foundation.
+
+## Overview
+
+This is an educational and demonstration platform for Solana blockchain payment capabilities. It provides hands-on demos running on Solana Devnet (testnet) with real verifiable transactions.
+
+## Key Features
+
+- **Interactive Payment Demos**: Real Solana Devnet transactions users can execute
+- **Stablecoin Metrics**: Data visualizations from Visa Onchain Analytics and Dune Analytics
+- **Multi-language Support**: English and Korean
+- **Test Wallet System**: Browser-based wallet generation for demo purposes
+
+## Payment Demo Use Cases
+
+### 1. Solana Pay QR
+Point-of-sale QR code payment flow using Solana Pay protocol.
+- Merchant generates payment request QR
+- Customer scans and confirms payment
+- Real-time transaction confirmation
+
+### 2. Basic SOL Payment
+Simple peer-to-peer SOL transfer demonstration.
+- Device-to-device transfer visualization
+- Transaction signing and confirmation flow
+
+### 3. Payment with Memo
+SOL transfer with on-chain memo attachment.
+- Useful for order IDs, reference numbers
+- Uses SPL Memo Program
+
+### 4. Batch Payment
+Multiple recipients in a single atomic transaction.
+- Cost efficiency (one fee vs multiple)
+- Atomicity guarantee (all-or-nothing)
+
+### 5. Fee Abstraction
+Third-party fee sponsorship demonstration.
+- Institution pays transaction fees
+- Enables gasless UX for end users
+
+## Technical Specifications (Accurate as of 2025)
+
+### Solana Network Parameters
+
+- **Base Transaction Fee**: 5,000 lamports per signature
+  - USD value varies with SOL price
+  - Priority fees may apply during congestion
+
+- **Block/Slot Time**: ~400ms
+  - This is NOT finality time
+  - Finalized confirmation: ~12-13 seconds (32 slots after confirmed)
+  - Alpenglow upgrade planned: ~120ms slot time (0.1-0.15s)
+
+- **Throughput (TPS)**:
+  - In practice: 1,000+ TPS (varies by measurement method)
+  - Theoretical maximum: 65,000+ TPS (ideal conditions)
+  - Note: TPS metrics vary based on vote transaction inclusion
+
+### Important Clarifications
+
+1. **400ms is slot time, not finality**: Solana's ~400ms refers to block production time. Full finalization requires ~32 additional slots (~12-13 seconds).
+
+2. **Transaction costs are variable**: The base fee is fixed in lamports, but USD equivalent changes with SOL price. Priority fees add to costs during network congestion.
+
+3. **TPS measurements vary**: Different sources report different TPS due to inclusion/exclusion of vote transactions and measurement methodology.
+
+## Data Sources
+
+- **Stablecoin Metrics**: Visa Onchain Analytics (https://visaonchainanalytics.com/)
+- **Median Fee Data**: Dune Analytics (https://dune.com/queries/5943670/9593199)
+  - Median fee is more representative than average/mean because it's unaffected by outlier transactions
+- **Network Specs**: Solana Documentation (https://solana.com/docs)
+
+## Technology Stack
+
+- React + TypeScript + Vite
+- Tailwind CSS with shadcn/ui components
+- @solana/web3.js for blockchain interactions
+- Recharts for data visualization
+- Framer Motion for animations
+
+## Network
+
+All demos operate on **Solana Devnet** (testnet). No real value is transferred. Test SOL has no monetary value.
+
+## Contact
+
+- **Author**: Chaerin Kim
+- **Organization**: Solana Foundation
+- **Twitter/X**: https://x.com/decentra1ized_
+- **Website**: https://solana-payment-showcase.vercel.app
+
+## License
+
+Educational and demonstration purposes. Not for production use without proper security review.
