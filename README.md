@@ -9,7 +9,7 @@ Interactive demo website showcasing Solana-based payment solutions. Built to dem
 - Stablecoin transaction count by blockchain (stacked bar chart)
 
 ### Interactive Payment Demos
-- **Basic SOL Payment**: Direct P2P SOL transfer with ~400ms confirmation
+- **Basic SOL Payment**: Direct P2P SOL transfer
 - **USDC Transfer**: SPL token transfer with automatic ATA creation
 - **Payment with Memo**: Attach invoice/order IDs on-chain (SOL/USDC)
 - **Solana Pay QR**: QR-based payment flow simulation (SOL/USDC)
