@@ -12,10 +12,12 @@ Interactive demo website showcasing Solana-based payment solutions. Built to dem
 
 ### Interactive Payment Demos
 - **Basic SOL Payment**: Direct P2P SOL transfer with ~400ms confirmation
-- **Payment with Memo**: Attach invoice numbers or order IDs on-chain
-- **Solana Pay QR**: QR-based payment flow simulation
-- **Batch Payment**: Multiple transfers in a single atomic transaction
-- **Fee Abstraction**: Sponsor pays transaction fees on behalf of users
+- **USDC Transfer**: SPL token transfer with automatic ATA creation
+- **Payment with Memo**: Attach invoice/order IDs on-chain (SOL/USDC)
+- **Solana Pay QR**: QR-based payment flow simulation (SOL/USDC)
+- **Batch Payment**: Multiple transfers in a single atomic transaction (SOL/USDC)
+- **Fee Abstraction**: Sponsor pays transaction fees on behalf of users (SOL/USDC)
+- **Prepaid Card Top-up**: Deposit to charge prepaid card balance (SOL/USDC)
 
 ### Additional Features
 - Test wallet management (Devnet)
@@ -40,10 +42,6 @@ Interactive demo website showcasing Solana-based payment solutions. Built to dem
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/decentra1ized/solana-payment-showcase.git
-cd solana-payment-showcase
-
 # Install dependencies
 npm install
 
@@ -125,11 +123,11 @@ MASTER_WALLET_SECRET=123,45,67,89,...
 | SOL | 0.01 SOL | Transfer from master wallet |
 | USDC | 0.05 USDC | Transfer from master wallet |
 
+**Devnet USDC Mint:** `4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU`
 
 Fund master wallet:
 - Devnet SOL: https://faucet.solana.com/
-- Devnet USDC: https://faucet.circle.com/ 
-**Devnet USDC Mint:** `4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU`
+- Devnet USDC: https://faucet.circle.com/
 
 ## License
 
